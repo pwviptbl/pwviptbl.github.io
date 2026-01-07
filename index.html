@@ -49,7 +49,7 @@
       h1 {
         margin: 0;
         font-family: "Unbounded", sans-serif;
-        font-size: clamp(30px, 6vw, 46px);
+        font-size: clamp(26px, 4.6vw, 40px);
         letter-spacing: -0.02em;
       }
       .role {
@@ -62,21 +62,17 @@
         gap: 10px 18px;
         font-weight: 600;
       }
-      .pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 6px 12px;
-        border-radius: 999px;
-        border: 2px solid var(--ink);
-        background: #fff2e3;
-        font-size: 14px;
-      }
       .grid {
         margin-top: 26px;
         display: grid;
         gap: 20px;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .summary {
+        margin-top: 22px;
+      }
+      .full {
+        grid-column: 1 / -1;
       }
       section {
         background: var(--paper);
@@ -164,7 +160,6 @@
   <body>
     <div class="wrap">
       <header>
-        <div class="pill">Ciberseguranca & Engenharia de Software</div>
         <h1>Marcio Antonio Silva Alves Junior</h1>
         <p class="role">
           Profissional de Ciberseguranca e Engenheiro de Software com experiencia
@@ -177,23 +172,25 @@
         </div>
         <div class="links">
           <a class="cta" href="mailto:pwviptbl@gmail.com">Fale comigo</a>
-          <a class="cta" href="#" aria-disabled="true">LinkedIn</a>
-          <a class="cta" href="#" aria-disabled="true">GitHub</a>
+          <a class="cta" href="https://www.linkedin.com/in/marcio-junior-bb7268110/">
+            LinkedIn
+          </a>
+          <a class="cta" href="https://github.com/pwviptbl">GitHub</a>
         </div>
       </header>
 
-      <div class="grid">
-        <section>
-          <h2>Resumo</h2>
-          <p>
-            Experiencia em analise e mitigacao de vulnerabilidades, testes de
-            seguranca automatizados e manuais, resposta a incidentes e apoio a
-            boas praticas de seguranca (SSDLC). Forte base em desenvolvimento
-            (PHP, Laravel, Node.js, Python, Vue.js, React) aplicada a seguranca
-            de aplicacoes e APIs.
-          </p>
-        </section>
+      <section class="summary">
+        <h2>Resumo</h2>
+        <p>
+          Experiencia em analise e mitigacao de vulnerabilidades, testes de
+          seguranca automatizados e manuais, resposta a incidentes e apoio a
+          boas praticas de seguranca (SSDLC). Forte base em desenvolvimento
+          (PHP, Laravel, Node.js, Python, Vue.js, React) aplicada a seguranca
+          de aplicacoes e APIs.
+        </p>
+      </section>
 
+      <div class="grid">
         <section>
           <h2>Formacao</h2>
           <ul>
@@ -203,9 +200,6 @@
             </li>
             <li>Tecnico Pos-Medio em Informatica - Colegio Realengo (2016)</li>
           </ul>
-        </section>
-
-        <section>
           <h2>Certificacoes</h2>
           <ul>
             <li>Fundamentos em Ciberseguranca - IBSEC (2023)</li>
@@ -243,7 +237,7 @@
           </div>
         </section>
 
-        <section class="experience">
+        <section class="experience full">
           <h2>Experiencia</h2>
           <h3>DBSeller Sistemas Integrados - Desenvolvedor / Analista de Seguranca</h3>
           <p>(01/2022 - Atual)</p>
@@ -261,7 +255,7 @@
           </ul>
 
           <h3>Freelancer - Desenvolvimento de Sistemas</h3>
-          <p>(2022 - Atual)</p>
+          <p>(2022)</p>
           <ul>
             <li>GED: API e app mobile com Node.js, React Native e PostgreSQL.</li>
             <li>Conexao do Futuro: sistema escolar completo (API, web e app).</li>
