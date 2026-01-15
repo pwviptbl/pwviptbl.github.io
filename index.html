@@ -1,273 +1,337 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Marcio Antonio S. A. Junior</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Unbounded:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root {
-        --bg-1: #f4efe7;
-        --bg-2: #f1d5b5;
-        --ink: #1e2320;
-        --accent: #c2563c;
-        --paper: rgba(255, 255, 255, 0.8);
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        font-family: "Space Grotesk", sans-serif;
-        color: var(--ink);
-        background:
-          radial-gradient(900px 600px at 10% 10%, #ffe8cc 0%, transparent 55%),
-          radial-gradient(700px 500px at 90% 20%, #f7c7a3 0%, transparent 60%),
-          linear-gradient(135deg, var(--bg-1), var(--bg-2));
-        min-height: 100vh;
-        padding: 32px;
-      }
-      .wrap {
-        max-width: 980px;
-        margin: 0 auto;
-      }
-      header {
-        display: grid;
-        gap: 18px;
-        padding: 28px 30px;
-        background: var(--paper);
-        border: 2px solid var(--ink);
-        border-radius: 18px;
-        box-shadow: 10px 10px 0 var(--ink);
-        animation: rise 600ms ease-out;
-      }
-      h1 {
-        margin: 0;
-        font-family: "Unbounded", sans-serif;
-        font-size: clamp(26px, 4.6vw, 40px);
-        letter-spacing: -0.02em;
-      }
-      .role {
-        font-size: 18px;
-        margin: 0;
-      }
-      .meta {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px 18px;
-        font-weight: 600;
-      }
-      .grid {
-        margin-top: 26px;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      }
-      .summary {
-        margin-top: 22px;
-      }
-      .full {
-        grid-column: 1 / -1;
-      }
-      section {
-        background: var(--paper);
-        border: 2px solid var(--ink);
-        border-radius: 18px;
-        padding: 20px 22px;
-        box-shadow: 8px 8px 0 var(--ink);
-      }
-      h2 {
-        margin: 0 0 12px;
-        font-size: 18px;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      ul {
-        margin: 0;
-        padding-left: 18px;
-      }
-      li {
-        margin-bottom: 8px;
-      }
-      .stack {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-      .tag {
-        border: 1.5px solid var(--ink);
-        border-radius: 999px;
-        padding: 4px 10px;
-        font-size: 13px;
-        background: #fff;
-      }
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-      }
-      .cta {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 16px;
-        border-radius: 999px;
-        border: 2px solid var(--ink);
-        text-decoration: none;
-        color: var(--ink);
-        background: #fff2e3;
-        font-weight: 600;
-        transition: transform 160ms ease, box-shadow 160ms ease;
-      }
-      .cta:hover {
-        transform: translate(-2px, -2px);
-        box-shadow: 4px 4px 0 var(--ink);
-      }
-      .experience h3 {
-        margin: 0 0 6px;
-        font-size: 16px;
-      }
-      .experience p {
-        margin: 0 0 10px;
-        font-size: 14px;
-      }
-      @keyframes rise {
-        from {
-          opacity: 0;
-          transform: translateY(10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @media (max-width: 640px) {
-        body {
-          padding: 20px;
-        }
-        header,
-        section {
-          box-shadow: 6px 6px 0 var(--ink);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <header>
-        <h1>Marcio Antonio Silva Alves Junior</h1>
-        <p class="role">
-          Profissional de Ciberseguranca e Engenheiro de Software com experiencia
-          em ERP, APIs e seguranca de aplicacoes.
-        </p>
-        <div class="meta">
-          <span>Rio de Janeiro - RJ</span>
-          <span>(21) 97488-3815</span>
-          <span>pwviptbl@gmail.com</span>
-        </div>
-        <div class="links">
-          <a class="cta" href="mailto:pwviptbl@gmail.com">Fale comigo</a>
-          <a class="cta" href="https://www.linkedin.com/in/marcio-junior-bb7268110/">
-            LinkedIn
-          </a>
-          <a class="cta" href="https://github.com/pwviptbl">GitHub</a>
-        </div>
-      </header>
 
-      <section class="summary">
-        <h2>Resumo</h2>
-        <p>
-          Experiencia em analise e mitigacao de vulnerabilidades, testes de
-          seguranca automatizados e manuais, resposta a incidentes e apoio a
-          boas praticas de seguranca (SSDLC). Forte base em desenvolvimento
-          (PHP, Laravel, Node.js, Python, Vue.js, React) aplicada a seguranca
-          de aplicacoes e APIs.
-        </p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcio Antonio S. A. Junior</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Unbounded:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg-1: #f4efe7;
+      --bg-2: #f1d5b5;
+      --ink: #1e2320;
+      --accent: #a3261b;
+      --paper: rgba(255, 255, 255, 0.8);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Space Grotesk", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 600px at 10% 10%, #ffe8cc 0%, transparent 55%),
+        radial-gradient(700px 500px at 90% 20%, #f7c7a3 0%, transparent 60%),
+        linear-gradient(135deg, var(--bg-1), var(--bg-2)),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+      background-size: auto, auto, auto, 26px 26px;
+      min-height: 100vh;
+      padding: 32px;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: grid;
+      gap: 18px;
+      padding: 28px 30px;
+      background: var(--paper);
+      border: 2px solid var(--ink);
+      border-radius: 18px;
+      box-shadow: 10px 10px 0 var(--ink);
+      animation: rise 600ms ease-out;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Unbounded", sans-serif;
+      font-size: clamp(26px, 4.6vw, 40px);
+      letter-spacing: -0.02em;
+    }
+
+    .role {
+      font-size: 19px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      font-weight: 600;
+    }
+
+    .grid {
+      margin-top: 26px;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .summary {
+      margin-top: 22px;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    section {
+      background: var(--paper);
+      border: 2px solid var(--ink);
+      border-radius: 18px;
+      padding: 20px 22px;
+      box-shadow: 8px 8px 0 var(--ink);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 6px;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 45px;
+      height: 3px;
+      background: var(--accent);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      border: 1.5px solid var(--ink);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 13px;
+      background: #fff;
+    }
+
+    .focus {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .focus .tag {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--ink);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 2px solid var(--ink);
+      text-decoration: none;
+      color: var(--ink);
+      background: #fff2e3;
+      font-weight: 600;
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .cta:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    .experience h3 {
+      margin: 0 0 6px;
+      font-size: 16px;
+    }
+
+    .experience p {
+      margin: 0 0 10px;
+      font-size: 14px;
+    }
+
+    @keyframes rise {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 20px;
+      }
+
+      header,
+      section {
+        box-shadow: 6px 6px 0 var(--ink);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Marcio Antonio Silva Alves Junior</h1>
+      <p class="role">
+        Analista de Seguranca (Red Team) e Engenheiro de Software com experiencia
+        em ERP, APIs e seguranca de aplicacoes.
+      </p>
+      <div class="focus">
+        <span class="tag">Red Team</span>
+        <span class="tag">Seguranca Ofensiva</span>
+        <span class="tag">Pentest Web</span>
+      </div>
+      <div class="meta">
+        <span>Rio de Janeiro - RJ</span>
+        <span>(21) 97488-3815</span>
+        <span>pwviptbl@gmail.com</span>
+      </div>
+      <div class="links">
+        <a class="cta" href="mailto:pwviptbl@gmail.com">Fale comigo</a>
+        <a class="cta" href="https://www.linkedin.com/in/marcio-junior-bb7268110/">
+          LinkedIn
+        </a>
+        <a class="cta" href="https://github.com/pwviptbl">GitHub</a>
+      </div>
+    </header>
+
+    <section class="summary">
+      <h2>Resumo</h2>
+      <p>
+        Analista de Segurança da Informação com foco em Red Team e segurança ofensiva, atuando em testes de intrusão
+        web, análise de vulnerabilidades exploráveis e validação prática de riscos. Background sólido em desenvolvimento
+        de software, aplicado à análise de código, exploração controlada e correção de falhas em produção. Experiência
+        com OWASP Top 10, MITRE ATT&CK, varreduras com Nmap/Nessus/Nuclei, resposta a incidentes e relatórios técnicos
+        e executivos orientados a impacto.
+      </p>
+    </section>
+
+    <div class="grid">
+      <section>
+        <h2>Formacao</h2>
+        <ul>
+          <li>
+            Bacharelado em Engenharia de Software - UniCesumar (concluido,
+            aguardando colacao de grau)
+          </li>
+          <li>Tecnico Pos-Medio em Informatica - Colegio Realengo (2016)</li>
+        </ul>
+        <h2>Certificacoes</h2>
+        <ul>
+          <li>Fundamentos em Ciberseguranca - IBSEC (2023)</li>
+          <li>Pentest - IBSEC (2023)</li>
+          <li>Analista SOC - IBSEC (2025)</li>
+        </ul>
       </section>
 
-      <div class="grid">
-        <section>
-          <h2>Formacao</h2>
-          <ul>
-            <li>
-              Bacharelado em Engenharia de Software - UniCesumar (concluido,
-              aguardando colacao de grau)
-            </li>
-            <li>Tecnico Pos-Medio em Informatica - Colegio Realengo (2016)</li>
-          </ul>
-          <h2>Certificacoes</h2>
-          <ul>
-            <li>Fundamentos em Ciberseguranca - IBSEC (2023)</li>
-            <li>Pentest - IBSEC (2023)</li>
-            <li>Analista SOC - IBSEC (2025)</li>
-          </ul>
-        </section>
+      <section>
+        <h2>Cursos</h2>
+        <ul>
+          <li>Santander Bootcamp Ciberseguranca - DIO (2025)</li>
+          <li>ISC2 Certified in Cybersecurity (CC) - ISC2 (2023)</li>
+          <li>Introducao ao Hacking e Pentest - SOLYD (2023)</li>
+          <li>Seguranca da Informacao e Hacking - Udemy (2023)</li>
+          <li>Cognizant Java Developer - DIO (2022)</li>
+          <li>Bootcamp .NET - DIO (2021)</li>
+          <li>Desenvolvimento Web PHP, Laravel e VueJs - Udemy (2021)</li>
+          <li>SQL Completo - Softblue (2021)</li>
+        </ul>
+      </section>
 
-        <section>
-          <h2>Cursos</h2>
-          <ul>
-            <li>Santander Bootcamp Ciberseguranca - DIO (2025)</li>
-            <li>ISC2 Certified in Cybersecurity (CC) - ISC2 (2023)</li>
-            <li>Introducao ao Hacking e Pentest - SOLYD (2023)</li>
-            <li>Seguranca da Informacao e Hacking - Udemy (2023)</li>
-            <li>Cognizant Java Developer - DIO (2022)</li>
-            <li>Bootcamp .NET - DIO (2021)</li>
-            <li>Desenvolvimento Web PHP, Laravel e VueJs - Udemy (2021)</li>
-            <li>SQL Completo - Softblue (2021)</li>
-          </ul>
-        </section>
+      <section>
+        <h2>Habilidades</h2>
+        <div class="stack">
+          <span class="tag">Red Team / Seguranca Ofensiva</span>
+          <span class="tag">Pentest Web</span>
+          <span class="tag">OWASP Top 10</span>
+          <span class="tag">MITRE ATT&amp;CK</span>
+          <span class="tag">Nmap / Nessus / Nuclei</span>
+          <span class="tag">Metasploit / Nikto / Maltego</span>
+          <span class="tag">Wireshark / Analise de Logs</span>
+          <span class="tag">Analise de Vulnerabilidades</span>
+          <span class="tag">Testes de Seguranca (Auto e Manual)</span>
+          <span class="tag">AppSec / SSDLC</span>
+          <span class="tag">Seguranca de APIs REST</span>
+          <span class="tag">PHP / Laravel / Node.js / Python</span>
+          <span class="tag">FastAPI / Vue.js</span>
+          <span class="tag">SQL / PostgreSQL</span>
+        </div>
+      </section>
 
-        <section>
-          <h2>Habilidades</h2>
-          <div class="stack">
-            <span class="tag">Pentest Web e Redes</span>
-            <span class="tag">Gestao de Vulnerabilidades</span>
-            <span class="tag">Seguranca de APIs (JWT)</span>
-            <span class="tag">OWASP Top 10</span>
-            <span class="tag">LGPD / ISO 27001 / NIST</span>
-            <span class="tag">PHP / Laravel / Node.js / Python</span>
-            <span class="tag">Vue.js / React / React Native</span>
-            <span class="tag">FastAPI / Celery</span>
-            <span class="tag">SQL / MySQL / PostgreSQL</span>
-          </div>
-        </section>
+      <section class="experience full">
+        <h2>Experiencia</h2>
+        <h3>DBSeller Sistemas Integrados - Desenvolvedor / Analista de Seguranca</h3>
+        <p>(01/2022 - Atual)</p>
+        <ul>
+          <li>Execucao de testes de seguranca automatizados e manuais em ERP e aplicacoes web, com foco em falhas exploraveis.</li>
+          <li>Planejamento e execucao de varreduras (Nmap, Nessus, Nuclei), analise de resultados e retest.</li>
+          <li>Analise, mitigacao e correcao de vulnerabilidades em producao (PHP/Laravel e infraestrutura).</li>
+          <li>Resposta a incidentes, investigacao tecnica, analise de logs e relatorios tecnicos/executivos.</li>
+          <li>Gestao de identidade e acessos (IAM) e solucao centralizada de usuarios com FastAPI, Vue.js e Celery.</li>
+          <li>Praticas de AppSec e SSDLC, seguranca em APIs e aderencia a LGPD, ISO 27001 e NIST.</li>
+          <li>Treinamentos tecnicos para times de desenvolvimento com foco em prevencao de vulnerabilidades.</li>
+        </ul>
 
-        <section class="experience full">
-          <h2>Experiencia</h2>
-          <h3>DBSeller Sistemas Integrados - Desenvolvedor / Analista de Seguranca</h3>
-          <p>(01/2022 - Atual)</p>
-          <ul>
-            <li>3 anos em ERP com PHP legado, JavaScript, Laravel, Vue.js e PostgreSQL.</li>
-            <li>Testes de seguranca automatizados e manuais, com mitigacoes efetivas.</li>
-            <li>Resposta a incidentes e relatorios de seguranca detalhados.</li>
-            <li>Analise e mitigacao de vulnerabilidades em sistemas e redes.</li>
-            <li>
-              Desenvolvimento de API em Python (FastAPI) e Vue.js com jobs Celery
-              para gestao centralizada de usuarios.
-            </li>
-            <li>Conformidade com LGPD, ISO 27001 e NIST.</li>
-            <li>Treinamentos internos sobre boas praticas de seguranca.</li>
-          </ul>
+        <h3>Freelancer - Desenvolvimento de Sistemas</h3>
+        <p>(2022)</p>
+        <ul>
+          <li>GED: API e app mobile com Node.js, React Native e PostgreSQL.</li>
+          <li>Conexao do Futuro: sistema escolar completo (API, web e app).</li>
+        </ul>
 
-          <h3>Freelancer - Desenvolvimento de Sistemas</h3>
-          <p>(2022)</p>
-          <ul>
-            <li>GED: API e app mobile com Node.js, React Native e PostgreSQL.</li>
-            <li>Conexao do Futuro: sistema escolar completo (API, web e app).</li>
-          </ul>
-
-          <h3>Exercito Brasileiro - Estagio (Secao de Informatica)</h3>
-          <p>(06/2014 - 03/2015)</p>
-          <ul>
-            <li>Administracao e manutencao de banco de dados e intranet.</li>
-          </ul>
-        </section>
-      </div>
+        <h3>Exercito Brasileiro - Estagio (Secao de Informatica)</h3>
+        <p>(06/2014 - 03/2015)</p>
+        <ul>
+          <li>Administracao e manutencao de banco de dados e intranet.</li>
+        </ul>
+      </section>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
